@@ -1,0 +1,17 @@
+{
+  "projects": {
+       "default": "manjot-dot"
+  },
+  "targets": {
+    "manjot-dot": {
+      "hosting": {
+        "beta": [
+          "beta-manjot-in"
+        ],
+        "live": [
+          "manjot-dot"
+        ]
+      }
+    }
+  }
+}
