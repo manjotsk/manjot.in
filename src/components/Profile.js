@@ -12,13 +12,6 @@ const Profile = () => {
         <h1>Hi there. Nice to meet you</h1>
       </div>
       <div className="grid col-span-1 md:flex items-center mt-10 justify-center">
-        <div className="mr-14">
-          <img
-            className="md:w-40"
-            src="https://i.pinimg.com/736x/6e/36/f2/6e36f2c9d9cc523f5904d6e4c91921f4.jpg"
-            alt="Logo"
-          />
-        </div>
         <div className="md:mr-4">
           <img
             className="md:w-40 rounded-full"
