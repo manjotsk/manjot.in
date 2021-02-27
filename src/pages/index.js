@@ -2,7 +2,6 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import Layout from "../components/Layout"
 import Profile from "../components/Profile"
-import heroImage from "../images/hero-image.svg"
 
 export default () => {
   return (

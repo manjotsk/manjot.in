@@ -22,7 +22,7 @@ const ProjectCard = ({
           <i className="fas fa-circle -top-1 -ml-2 absolute" />
         </div>
         <div className="ml-10">
-          <a target="_blank" href={link}>
+          <a target="_blank" href={link} rel="noreferrer">
             <div className="font-bold transition duration-500 ease-in-out transform  hover:text-blue-500">
               {name}
               <span className="">↗</span>
