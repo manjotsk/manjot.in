@@ -239,6 +239,10 @@ export const technologies = {
     ],
     [
       {
+        name: "postman",
+        img: "postman",
+      },
+      {
         name: "blender",
         img: "blender",
       },
@@ -252,8 +256,7 @@ export const technologies = {
     ],
     [
       { name: "app_store", img: "app_store" },
-      { name: "android", img: "android" },
-      { name: "play_store", img: "play_store" },
+      { name: "firebase", img: "firebase" },
     ],
   ],
 }
