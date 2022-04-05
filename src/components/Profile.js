@@ -1,3 +1,4 @@
+import { Tooltip } from "antd"
 import React from "react"
 import { TwitterTimelineEmbed } from "react-twitter-embed"
 import { projects, technologies } from "./data"
@@ -14,8 +15,8 @@ const Profile = () => {
       <div className="grid col-span-1 md:flex items-center mt-10 justify-center">
         <div className="md:mr-4">
           <img
-            className="md:w-40 rounded-full"
-            src="https://pbs.twimg.com/profile_images/1164779490087600128/Ckp3CSC1_400x400.jpg"
+            className="md:w-60 rounded-full"
+            src="img/pic.png"
             alt="Manjot"
           />
         </div>
@@ -29,7 +30,7 @@ const Profile = () => {
             >
               Amritsar
             </a>
-            . I am a Professional Software Developer, always looking to learn
+            . I am a Professional Software Technology Architect, always looking to learn
             new things, discover problems and develop solutions.
           </p>
           <p className="mt-4">
@@ -64,8 +65,8 @@ const Profile = () => {
           </div>
         </div>
         <div className="flex items-center justify-center md:ml-12 pt-10 md:pt-0">
-          <div className="md:flex">
-            <div className="flex items-center mb-4 md:mb-0 roduned-full">
+          <div className="md:flex space-x-4">
+            <div className="flex items-center mb-4 md:mb-0 rounded-full">
               <a
                 style={{ color: "#0645ad" }}
                 href="https://wikipedia.org/wiki/Punjabi_language"
@@ -73,9 +74,9 @@ const Profile = () => {
               >
                 <span>ਪ</span>
               </a>
-              <p>Native</p>
+              <p style={{ paddingTop: 15 }}>Native</p>
             </div>
-            <div className="flex items-center mb-4 md:mb-0 roduned-full">
+            <div className="flex items-center mb-4 md:mb-0 rounded-full">
               <a
                 style={{ color: "#0645ad" }}
                 href="https://wikipedia.org/wiki/English_language"
@@ -83,10 +84,10 @@ const Profile = () => {
               >
                 <span>EN</span>
               </a>
-              <p>Fluent</p>
+              <p style={{ paddingTop: 15 }}>Fluent</p>
             </div>
 
-            <div className="flex items-center md:ml-10">
+            <div className="flex items-center">
               <a
                 style={{ color: "#0645ad" }}
                 href="https://en.wikipedia.org/wiki/Hindi"
@@ -94,7 +95,7 @@ const Profile = () => {
               >
                 <span>ह</span>
               </a>
-              <p>Fluent</p>
+              <p style={{ paddingTop: 15 }}>Fluent</p>
             </div>
           </div>
         </div>
@@ -102,8 +103,37 @@ const Profile = () => {
       <div className="md:flex mt-20 text-center ml-10 mr-10 md:ml-36 md:mr-36">
         <div className="md:mr-20 md:w-1/3">
           <h1 className="font-bold italic ">TECHNOLOGIES THAT I USE</h1>
-          <h1 className="font-bold italic mb-10">Everyday</h1>
+          <h1 className="font-bold italic mb-10">(Almost) Everyday</h1>
           <div className="relative mt-5 text-left">
+            <div className="flex items-center relative pb-5 pt-5 justify-start">
+              <div className="border-r-2 border-black absolute h-full top-2 z-10 ">
+                <i className="fas fa-circle -top-1 -ml-2 absolute" />
+                <div className="absolute seccion -ml-8 font-bold italic text-gray-400 top-32">
+                  FRONTEND
+                </div>
+              </div>
+              <div className="ml-6 pt-5">
+                {technologies.frontend.map(techs => (
+                  <div
+                    key={JSON.stringify(techs)}
+                    className="flex mb-4 space-x-16"
+                  >
+                    {techs.map(({ name, link, img }) => (
+                      <div key={name}>
+                        <Tooltip title={name}>
+                          <img
+                            key={name}
+                            className="w-24"
+                            src={img ? "/icons/" + img + ".png" : link}
+                            alt={img}
+                          />
+                        </Tooltip>
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
             <div className="flex items-center relative pb-5 justify-start">
               <div className="border-r-2 border-black absolute h-full top-2 z-10 ">
                 <i className="fas fa-circle -top-1 -ml-2 absolute" />
@@ -118,13 +148,15 @@ const Profile = () => {
                     className="flex mb-4 space-x-16"
                   >
                     {techs.map(({ name, link, img }) => (
-                      <div>
-                        <img
-                          key={name}
-                          className="w-24"
-                          src={img ? "/icons/" + img + ".png" : link}
-                          alt={img}
-                        />
+                      <div key={name}>
+                        <Tooltip title={name}>
+                          <img
+                            key={name}
+                            className="w-24"
+                            src={img ? "/icons/" + img + ".png" : link}
+                            alt={img}
+                          />
+                        </Tooltip>
                       </div>
                     ))}
                   </div>
@@ -146,45 +178,21 @@ const Profile = () => {
                   >
                     {techs.map(({ name, link, img }) => (
                       <div>
-                        <img
-                          key={name}
-                          className="w-24"
-                          src={img ? "/icons/" + img + ".png" : link}
-                          alt={img}
-                        />
+                        <Tooltip title={name}>
+                          <img
+                            key={name}
+                            className="w-24"
+                            src={img ? "/icons/" + img + ".png" : link}
+                            alt={img}
+                          />
+                        </Tooltip>
                       </div>
                     ))}
                   </div>
                 ))}
               </div>
             </div>
-            <div className="flex items-center relative pb-5 pt-5 justify-start">
-              <div className="border-r-2 border-black absolute h-full top-2 z-10 ">
-                <i className="fas fa-circle -top-1 -ml-2 absolute" />
-                <div className="absolute seccion -ml-8 font-bold italic text-gray-400 top-32">
-                  FRONTEND
-                </div>
-              </div>
-              <div className="ml-6 pt-5">
-                {technologies.frontend.map(techs => (
-                  <div
-                    key={JSON.stringify(techs)}
-                    className="flex mb-4 space-x-16"
-                  >
-                    {techs.map(({ name, link, img }) => (
-                      <div>
-                        <img
-                          key={name}
-                          className="w-24"
-                          src={img ? "/icons/" + img + ".png" : link}
-                          alt={img}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                ))}
-              </div>
-            </div>
+
             <div className="flex items-center relative pb-5 pt-5 justify-start">
               <div className="border-r-2 border-black absolute h-full top-2 z-10">
                 <i className="fas fa-circle -top-1 -ml-2 absolute" />
@@ -203,7 +211,7 @@ const Profile = () => {
                     className="flex mb-4 space-x-16"
                   >
                     {techs.map(({ name, link, img }) => (
-                      <div>
+                      <div key={name}>
                         <img
                           key={name}
                           className="w-24"
@@ -225,7 +233,7 @@ const Profile = () => {
           ))}
           <TwitterTimelineEmbed
             sourceType="profile"
-            screenName="kalsimsk"
+            screenName="manjot_sk"
             options={{ height: 800 }}
           />
         </div>

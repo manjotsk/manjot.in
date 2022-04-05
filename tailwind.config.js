@@ -2,7 +2,11 @@ module.exports = {
   purge: ["./src/**/*.js"],
   target: "relaxed",
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        '60': '15rem'
+      }
+    },
   },
   variants: {},
   plugins: [],
