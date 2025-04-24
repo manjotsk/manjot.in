@@ -1,72 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manjot Singh - Portfolio</title>
+  <title>manjot singh - portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-black font-sans">
 
-  <!-- Hero Section -->
+  <!-- hero section -->
   <section class="bg-white p-10 border-4 border-black shadow-[8px_8px_0_0_black] text-center mx-4 mt-6">
-    <h1 class="text-5xl font-extrabold">Manjot Singh</h1>
-    <p class="text-xl mt-2">Technologist | Software Architect | Full Stack Developer</p>
-    <a href="#contact" class="mt-6 inline-block bg-yellow-300 text-black px-6 py-2 border-2 border-black shadow-[4px_4px_0_0_black] hover:translate-x-1 hover:translate-y-1 transition">Get in Touch</a>
+    <h1 class="text-5xl font-extrabold">manjot singh</h1>
+    <p class="text-xl mt-2">technologist | software architect | full stack developer</p>
+    <a href="#contact" class="mt-6 inline-block bg-yellow-300 text-black px-6 py-2 border-2 border-black shadow-[4px_4px_0_0_black] hover:translate-x-1 hover:translate-y-1 transition">get in touch</a>
   </section>
 
-  <!-- About Me -->
+  <!-- about me -->
   <section class="mt-10 mx-4 p-6 border-4 border-black bg-white shadow-[8px_8px_0_0_black]">
-    <h2 class="text-2xl font-bold mb-4">About Me</h2>
-    <p>I’m a technologist passionate about web technologies. I love learning new things, discovering problems, and building creative, user-focused solutions. I thrive on crafting optimal and cost-effective full-stack applications and SaaS products.</p>
+    <h2 class="text-2xl font-bold mb-4">about me</h2>
+    <p>i’m a technologist passionate about web technologies. i love learning new things, discovering problems, and building creative, user-focused solutions. i thrive on crafting optimal and cost-effective full-stack applications and saas products.</p>
   </section>
 
-  <!-- Projects Section -->
+  <!-- my hot takes. 
+   list view of my blogs(title, desc, time of posting) -->
+  <section class="mt-10 mx-4 p-6 border-4 border-black bg-white shadow-[8px_8px_0_0_black]">
+    <h2 class="text-2xl font-bold mb-4">my hot takes</h2>
+    
+    <!-- navigation links for hot takes -->
+    <nav class="mb-4">
+      <ul class="flex space-x-4 text-blue-600 font-bold">
+        <li><a href="#ai">ai in web development</a></li>
+        <li><a href="#cloud">cloud-native architecture</a></li>
+        <li><a href="#microservices">microservices vs monoliths</a></li>
+      </ul>
+    </nav>
+    
+    <ul class="list-disc pl-5">
+      <li id="ai" class="mb-2">
+        <strong>title:</strong> the future of ai in web development <br>
+        <strong>description:</strong> exploring the impact of ai on web development practices. <br>
+        <strong>date:</strong> january 2025
+      </li>
+      <li id="cloud" class="mb-2">
+        <strong>title:</strong> cloud-native architecture: best practices <br>
+        <strong>description:</strong> a guide to building scalable applications in the cloud. <br>
+        <strong>date:</strong> february 2025
+      </li>
+      <li id="microservices" class="mb-2">
+        <strong>title:</strong> microservices vs monoliths: the great debate <br>
+        <strong>description:</strong> analyzing the pros and cons of both architectures. <br>
+        <strong>date:</strong> march 2025
+      </li>
+    </ul>
+  </section>
+
+  <!-- projects section -->
   <section class="mt-10 mx-4">
-    <h2 class="text-2xl font-bold mb-6 text-center">Projects</h2>
+    <h2 class="text-2xl font-bold mb-6 text-center">projects</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="border-4 border-black p-4 shadow-[8px_8px_0_0_black] bg-white">
-        <h3 class="text-xl font-bold">MMO - Manage My Organisation</h3>
-        <p class="text-sm mt-2">Cloud-based organization management tool helping businesses hit daily goals. (Beta Release)</p>
+        <h3 class="text-xl font-bold">mmo - manage my organisation</h3>
+        <p class="text-sm mt-2">cloud-based organization management tool helping businesses hit daily goals. (beta release)</p>
       </div>
       <div class="border-4 border-black p-4 shadow-[8px_8px_0_0_black] bg-white">
-        <h3 class="text-xl font-bold">Zeus Product (SaaS)</h3>
-        <p class="text-sm mt-2">Quote management SaaS tool for operational excellence. Led architecture and team execution.</p>
+        <h3 class="text-xl font-bold">zeus product (saas)</h3>
+        <p class="text-sm mt-2">quote management saas tool for operational excellence. led architecture and team execution.</p>
       </div>
       <div class="border-4 border-black p-4 shadow-[8px_8px_0_0_black] bg-white">
-        <h3 class="text-xl font-bold">Fidelis ZEUS Mobile App</h3>
-        <p class="text-sm mt-2">Cross-platform app for quotation, task, and event management using OfBiz APIs.</p>
+        <h3 class="text-xl font-bold">fidelis zeus mobile app</h3>
+        <p class="text-sm mt-2">cross-platform app for quotation, task, and event management using ofbiz apis.</p>
       </div>
       <div class="border-4 border-black p-4 shadow-[8px_8px_0_0_black] bg-white">
-        <h3 class="text-xl font-bold">Smiles.Care Administrator</h3>
-        <p class="text-sm mt-2">Volunteer-built end-to-end NGO platform for donations, campaigns, and survey tracking.</p>
+        <h3 class="text-xl font-bold">smiles.care administrator</h3>
+        <p class="text-sm mt-2">volunteer-built end-to-end ngo platform for donations, campaigns, and survey tracking.</p>
       </div>
       <div class="border-4 border-black p-4 shadow-[8px_8px_0_0_black] bg-white">
-        <h3 class="text-xl font-bold">Mobile Precision Irrigation System</h3>
-        <p class="text-sm mt-2">AI-based robotic soil analysis and water optimization system for agriculture.</p>
+        <h3 class="text-xl font-bold">mobile precision irrigation system</h3>
+        <p class="text-sm mt-2">ai-based robotic soil analysis and water optimization system for agriculture.</p>
       </div>
       <div class="border-4 border-black p-4 shadow-[8px_8px_0_0_black] bg-white">
-        <h3 class="text-xl font-bold">EveryStream Mobile App</h3>
-        <p class="text-sm mt-2">Simulcasting app for live video streams across YouTube, Facebook, and Twitch.</p>
+        <h3 class="text-xl font-bold">everystream mobile app</h3>
+        <p class="text-sm mt-2">simulcasting app for live video streams across youtube, facebook, and twitch.</p>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- tech domains -->
+  <section class="mt-10 mx-4 p-6 border-4 border-black bg-white shadow-[8px_8px_0_0_black]">
+    <h2 class="text-2xl font-bold mb-4">i love working in</h2>
+    <ul class="list-disc pl-5">
+      <li>scalable web applications</li>
+      <li>consumer ai & machine learning</li>
+      <li>cloud-native applications</li>
+      <li>microservices architecture</li>
+      <li>serverless architecture</li>
+      <li>cloud infrastructure</li>
+      <li>mobile app development</li>
+      <li>web technologies</li>
+    </ul>
+  </section>
+
+  <!-- contact section -->
   <section id="contact" class="mt-10 mx-4 p-6 border-4 border-black bg-white shadow-[8px_8px_0_0_black]">
-    <h2 class="text-2xl font-bold mb-4">Contact</h2>
-    <p class="mb-2">Email: <a href="mailto:manjot.kalsi@simbaquartz.com" class="underline text-blue-600">manjot.kalsi@simbaquartz.com</a></p>
-    <p class="mb-2">Phone: <a href="tel:+918556936450" class="underline text-blue-600">+91 85569-36450</a></p>
-    <p class="mb-2">Social: 
-      <a href="https://twitter.com" class="underline text-blue-600">Twitter</a>, 
-      <a href="https://github.com" class="underline text-blue-600">GitHub</a>, 
-      <a href="https://instagram.com" class="underline text-blue-600">Instagram</a>
+    <h2 class="text-2xl font-bold mb-4">contact</h2>
+    <p class="mb-2">email: <a href="mailto:manjot.kalsi@simbaquartz.com" class="underline text-blue-600">manjot.kalsi@simbaquartz.com</a></p>
+    <p class="mb-2">phone: <a href="tel:+918556936450" class="underline text-blue-600">+91 85569-36450</a></p>
+    <p class="mb-2">social: 
+      <a href="https://x.com/manjot_sk" class="underline text-blue-600">x</a>, 
+      <a href="https://github.com/manjotsk" class="underline text-blue-600">gh</a>, 
+      <a href="https://instagram.com/manjotsk" class="underline text-blue-600">ig</a>
     </p>
   </section>
 
-  <!-- Footer -->
+  <!-- footer -->
   <footer class="text-center mt-10 mb-6 text-sm">
-    <p>Built with ♥ using Tailwind CSS | &copy; 2025 Manjot Singh</p>
+    <p>built with ♥ using tailwind css | &copy; 2025 manjot singh</p>
   </footer>
 
 </body>
