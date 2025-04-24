@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microservices vs Monoliths</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #fefefe;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .neo-box {
+      border: 4px solid black;
+      background-color: #f1f1f1;
+      box-shadow: 6px 6px 0px black;
+    }
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+      padding: 0 4px;
+    }
+    .animate-up-down {
+      animation: up-down 3s infinite;
+    }
+    @keyframes up-down {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body class="p-6 sm:p-12">
+  <!-- add a navbar with neobrutal manjot.in text link to navigate to home -->
+  <nav class="mb-4">
+    <ul class="flex space-x-4 text-blue-600 font-bold">
+      <li><a href="/">manjot.in</a></li>
+    </ul>
+  </nav>
+    <!-- floating background image in img/manjot.png with light opacity. it should animate un and down lightly. it should be 50% of the screen height. it should be on the right hand -->
+    <div class="fixed top-0 right-0 w-1/2 h-screen opacity-[5%] pointer-events-none">
+        <img src="/img/manjot.png" alt="Background Image" class="w-full h-full object-cover animate-up-down" />
+    </div>
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl font-bold neo-box p-4 mb-8">The Rise of Consumer AI & Its Impact on Rural India</h1>
+  
+      <div class="neo-box p-4 mb-6">
+        <p>I’m from <span class="highlight">Amritsar, Punjab</span>—a place rich in culture, but equally full of ambition. Over the years, I've had the chance to build tools and platforms for real-world use—ones that simplify work, empower small teams, and scale without needing Silicon Valley budgets.</p>
+        <p class="mt-2">And now, I’m witnessing something powerful: <span class="highlight">Consumer AI</span> is not only evolving—it’s transforming India’s rural heartland in ways we couldn’t imagine a few years ago.</p>
+      </div>
+  
+      <div class="neo-box p-4 mb-6">
+        <h2 class="text-2xl font-semibold mb-2">What is Consumer AI?</h2>
+        <p>It’s not about billion-parameter models in data centers. It’s about AI tools that live on phones, work offline, understand native language, and solve real-life problems.</p>
+        <ul class="list-disc pl-6 mt-2">
+          <li>Voice assistants that translate between Punjabi and English</li>
+          <li>Camera-based tools that scan crops and give advice</li>
+          <li>Speech-to-text that helps workers log tasks hands-free</li>
+        </ul>
+      </div>
+  
+      <div class="neo-box p-4 mb-6">
+        <h2 class="text-2xl font-semibold mb-2">My AI Journey</h2>
+        <p>I’ve built productivity platforms that used AI for auto-follow-ups, HR tools that recorded logs via voice, and language learning apps that translated in real-time.</p>
+        <p class="mt-2">In one case, we moved a SaaS product from cloud microservices to an on-prem monolith running locally in India. With embedded AI modules, it ran faster and offline—perfect for rural setups.</p>
+      </div>
+  
+      <div class="neo-box p-4 mb-6">
+        <h2 class="text-2xl font-semibold mb-2">What’s Changing in Rural India?</h2>
+        <ul class="list-disc pl-6">
+          <li>Farmers diagnose crops with a smartphone</li>
+          <li>Village shopkeepers generate invoices using voice</li>
+          <li>Frontline workers take attendance using face detection</li>
+        </ul>
+        <p class="mt-2">And all of it works on phones under ₹10,000. No fancy servers. No fiber lines. Just AI that meets people where they are.</p>
+      </div>
+  
+      <div class="neo-box p-4 mb-6">
+        <h2 class="text-2xl font-semibold mb-2">The Challenges</h2>
+        <ul class="list-disc pl-6">
+          <li>AI still struggles with dialect accuracy</li>
+          <li>Data privacy is a grey zone for most users</li>
+          <li>Digital infra like power and backups remains unstable in pockets</li>
+        </ul>
+        <p class="mt-2">But these are solvable. We’re not waiting for perfect—just practical.</p>
+      </div>
+  
+      <div class="neo-box p-4">
+        <p>Growing up in Amritsar, I never thought someone in a nearby pind would be able to speak into a phone and file a loan form or identify pests on their crops using AI. But today, it’s reality.</p>
+        <p class="mt-2">As builders, this is our opportunity. <span class="highlight">Don’t just build for cities</span>. Build for Amritsar. Build for every village that’s ready for tech—just waiting for the right tool to reach them.</p>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microservices vs Monoliths</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #fefefe;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .neo-box {
+      border: 4px solid black;
+      background-color: #f1f1f1;
+      box-shadow: 6px 6px 0px black;
+    }
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+      padding: 0 4px;
+    }
+    .animate-up-down {
+      animation: up-down 3s infinite;
+    }
+    @keyframes up-down {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body class="p-6 sm:p-12">
+  <!-- add a navbar with neobrutal manjot.in text link to navigate to home -->
+  <nav class="mb-4">
+    <ul class="flex space-x-4 text-blue-600 font-bold">
+      <li><a href="/">manjot.in</a></li>
+    </ul>
+  </nav>
+    <!-- floating background image in img/manjot.png with light opacity. it should animate un and down lightly. it should be 50% of the screen height. it should be on the right hand -->
+    <div class="fixed top-0 right-0 w-1/2 h-screen opacity-[5%] pointer-events-none">
+        <img src="/img/manjot.png" alt="Background Image" class="w-full h-full object-cover animate-up-down" />
+    </div>
+    <div class="max-w-5xl mx-auto neobrutal bg-white p-8">
+      <h1 class="text-4xl font-bold mb-4">IT-Pind & Reverse Migration: My Talk at Azadi Ka Amrit Mahotsav</h1>
+      <p class="text-lg mb-6">Spoken by <strong>Manjot Singh</strong> | Celebrating 75 years of India's Independence</p>
+
+      <p class="mb-4">First of all, heartfelt thanks to the entire panel and council for inviting me. I was honored to share the stage with industry veterans and visionaries. Being part of the 75th Azadi Ka Amrit Mahotsav was a moment of pride—and reflection.</p>
+
+      <p class="mb-4">The day was full of learning, especially from Dr. Jatinder Kaur, who shared brilliant insights on the rural economy of Punjab. It struck a chord with me. As a young entrepreneur from an IT background, I couldn’t help but feel that we’re sitting on an ocean of untapped potential in rural India.</p>
+
+      <p class="mb-4">The GDP contribution from rural areas is less than half of that from urban India. Why? Because the infrastructure and opportunities don’t exist where they matter most. This sparked the beginning of our unique rural tech initiative—<strong>IT-Pind</strong>.</p>
+
+      <h2 class="text-2xl font-semibold mt-6 mb-2">What is IT-Pind?</h2>
+      <p class="mb-4">IT-Pind is our grassroots initiative to bring technology, training, and transformation to rural Punjab. We invested in office infrastructure, training zones, and employee transportation—spending around ₹2.5 lakh/month just on conveyance.</p>
+
+      <p class="mb-4">25% of our workforce lives within 15 km of the office. 50% of our employees are from Punjab, while the rest bring outside perspectives from across India. We’ve created success stories where employees grew from ₹5k/month to ₹60k/month.</p>
+
+      <h2 class="text-2xl font-semibold mt-6 mb-2">Talent Incubation & Skill Building</h2>
+      <p class="mb-4">From graphic design to cloud technologies, our incubation zone prepares locals to thrive. 15% of our current team started with no prior IT experience. We provide daily training, language support, and hands-on exposure to SaaS, IoT, and analytics.</p>
+
+      <p class="mb-4">In just one year, our team scaled from 30 to 120—powered by our in-house productivity tools and AI insights. This model is living proof that rural India is not behind, just waiting for the right opportunity.</p>
+
+      <h2 class="text-2xl font-semibold mt-6 mb-2">Reverse Migration: The Ripple Effect</h2>
+      <p class="mb-4">Reverse migration helps decentralize economic activity. Our village now consumes 15–17 litres of fresh milk daily. Local electricians, tailors, and dairy farmers are witnessing an uptick in income. PG culture is growing, and homegrown micro-economies are thriving.</p>
+
+      <p class="mb-4">We’re not just creating jobs. We’re transforming the entire village ecosystem. Everything that once fueled urban GDP is now supporting rural growth.</p>
+
+      <h2 class="text-2xl font-semibold mt-6 mb-2">The Vision</h2>
+      <p class="mb-4">I envision this model being replicated at scale. Let’s empower our villages to become tech hubs. Let’s enable our youth to stay, learn, and grow where they belong. The future of India’s economy is not just in cities—it’s in our villages too.</p>
+
+      <p class="text-xl font-bold mt-6">Thank you!</p>
+    </div>
+</body>
+</html>
