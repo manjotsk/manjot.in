@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microservices vs Monoliths</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #fefefe;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .neo-box {
+      border: 4px solid black;
+      background-color: #f1f1f1;
+      box-shadow: 6px 6px 0px black;
+    }
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+      padding: 0 4px;
+    }
+    .animate-up-down {
+      animation: up-down 3s infinite;
+    }
+    @keyframes up-down {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body class="p-6 sm:p-12">
+    <!-- floating background image in img/manjot.png with light opacity. it should animate un and down lightly. it should be 50% of the screen height. it should be on the right hand -->
+    <div class="fixed top-0 right-0 w-1/2 h-screen opacity-[5%] pointer-events-none">
+        <img src="/img/manjot.png" alt="Background Image" class="w-full h-full object-cover animate-up-down" />
+    </div>
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold neo-box p-4 mb-8">My Brutal take on Microservices vs Monoliths: The Great Debate</h1>
+
+    <div class="neo-box p-4 mb-6">
+      <p>Let’s cut through the noise. If you’ve spent enough time building, scaling, or salvaging digital products, you’ve probably been hit with the “microservices vs monolith” question more than once. Everyone has a strong opinion. And like most tech debates, the right answer is: <span class="highlight">“It depends.”</span></p>
+    </div>
+
+    <div class="neo-box p-4 mb-6">
+      <h2 class="text-2xl font-semibold mb-2">The Monolith: One House, One Roof</h2>
+      <p class="mb-2">A <span class="highlight">monolith</span> is your all-in-one app. Everything is tightly integrated—your backend, frontend, and logic live together in one place.</p>
+      <ul class="list-disc pl-6">
+        <li>Ship fast, ideal for MVPs</li>
+        <li>Easier to debug and deploy</li>
+        <li>Harder to scale with teams</li>
+        <li>Partial failures affect the whole system</li>
+      </ul>
+      <p class="mt-2">I still remember building our first productivity tool as a monolith. It let us move at lightning speed.</p>
+    </div>
+
+    <div class="neo-box p-4 mb-6">
+      <h2 class="text-2xl font-semibold mb-2">Microservices: Divide and Rule</h2>
+      <p class="mb-2">Microservices are independent services that talk to each other over APIs or queues. Perfect for scalability, but they come with overhead.</p>
+      <ul class="list-disc pl-6">
+        <li>Scale parts of your system independently</li>
+        <li>Autonomous teams, safer deployments</li>
+        <li>DevOps complexity increases</li>
+        <li>Network latency & failure points</li>
+      </ul>
+      <p class="mt-2">While building a logistics platform, the load tracking started dragging billing. That’s when we split into microservices—it saved us.</p>
+      <p class="mt-2">In another case, I moved a cloud-based microservice app to an on-prem monolith for a client in China—it got <span class="highlight">insanely faster</span>.</p>
+    </div>
+
+    <div class="neo-box p-4 mb-6">
+      <h2 class="text-2xl font-semibold mb-2">When to Choose What?</h2>
+      <ul class="list-disc pl-6">
+        <li>Start with a monolith for fast iteration</li>
+        <li>Split when teams grow and features bottleneck each other</li>
+        <li>If features evolve independently, microservices make sense</li>
+      </ul>
+      <p class="mt-2">One of our HR tools never needed splitting—it was clean, single-use, and stayed that way. Overengineering kills momentum.</p>
+    </div>
+
+    <div class="neo-box p-4">
+      <h2 class="text-2xl font-semibold mb-2">Final Word</h2>
+      <p>Architecture isn’t permanent. It evolves. Be honest with your bottlenecks. Refactor when needed. Don’t choose one style forever—choose what lets you <span class="highlight">ship fast and sleep well</span>.</p>
+    </div>
+  </div>
+</body>
+</html>

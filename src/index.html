@@ -1,31 +1,52 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>manjot singh - portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .animate-up-down {
+      animation: up-down 3s infinite;
+    }
+    @keyframes up-down {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-black font-sans">
 
+<body class="bg-gray-100 text-black font-sans">
+  <div class="fixed top-0 right-0  h-screen opacity-[5%] pointer-events-none">
+    <img src="/img/manjot.png" alt="Background Image" class="w-full h-full object-cover animate-up-down" />
+</div>
   <!-- hero section -->
   <section class="bg-white p-10 border-4 border-black shadow-[8px_8px_0_0_black] text-center mx-4 mt-6">
     <h1 class="text-5xl font-extrabold">manjot singh</h1>
-    <p class="text-xl mt-2">technologist | software architect | full stack developer</p>
-    <a href="#contact" class="mt-6 inline-block bg-yellow-300 text-black px-6 py-2 border-2 border-black shadow-[4px_4px_0_0_black] hover:translate-x-1 hover:translate-y-1 transition">get in touch</a>
+    <p class="text-xl mt-2">technologist | software architect | consultant</p>
+    <a href="#contact"
+      class="mt-6 inline-block bg-yellow-300 text-black px-6 py-2 border-2 border-black shadow-[4px_4px_0_0_black] hover:translate-x-1 hover:translate-y-1 transition">get
+      in touch</a>
   </section>
 
   <!-- about me -->
   <section class="mt-10 mx-4 p-6 border-4 border-black bg-white shadow-[8px_8px_0_0_black]">
     <h2 class="text-2xl font-bold mb-4">about me</h2>
-    <p>i’m a technologist passionate about web technologies. i love learning new things, discovering problems, and building creative, user-focused solutions. i thrive on crafting optimal and cost-effective full-stack applications and saas products.</p>
+    <p>i’m a technologist passionate about web technologies. i love learning new things, discovering problems, and
+      building creative, user-focused solutions. i thrive on crafting optimal and cost-effective full-stack applications
+      and saas products.</p>
   </section>
 
   <!-- my hot takes. 
    list view of my blogs(title, desc, time of posting) -->
   <section class="mt-10 mx-4 p-6 border-4 border-black bg-white shadow-[8px_8px_0_0_black]">
     <h2 class="text-2xl font-bold mb-4">my hot takes</h2>
-    
+
     <!-- navigation links for hot takes -->
     <nav class="mb-4">
       <ul class="flex space-x-4 text-blue-600 font-bold">
@@ -34,31 +55,18 @@
         <li><a href="#microservices">microservices vs monoliths</a></li>
       </ul>
     </nav>
-    
-    <div class=""space-y-8"></div>
-      <article id=""ai" class=""p-6 border-4 border-black bg-white shadow-[8px_8px_0_0_black]"></article>
-        <header class=""mb-4"></header>
-          <h3 class=""text-2xl font-bold">the future of ai in web development</h3>
-          <p class="text-sm text-gray-600">january 2025</p>
-        </header>
-        <p class="text-base">exploring the impact of ai on web development practices.</p>
-      </article>
 
-      <article id="cloud" class="p-6 border-4 border-black bg-white shadow-[8px_8px_0_0_black]"></article>
-        <header class=""mb-4"></header>
-          <h3 class=""text-2xl font-bold">cloud-native architecture: best practices</h3>
-          <p class=""text-sm text-gray-600">february 2025</p>
-        </header>
-        <p class="text-base">a guide to building scalable applications in the cloud.</p>
-      </article>
+    <div class="" space-y-8"></div>
+    <article id="microservices" class="p-6 border-4 border-black bg-white shadow-[8px_8px_0_0_black]">
+      <header class="mb-4">
+        <h3 class="text-2xl font-bold">
+          <a href="/blogs/microservices-vs-monolith.html">microservices vs monoliths: the great debate</a>
+        </h3>
+        <p class="text-sm text-gray-600">march 2025</p>
+      </header>
+      <p class="text-base">analyzing the pros and cons of both architectures.</p>
+    </article>
 
-      <article id="microservices" class="p-6 border-4 border-black bg-white shadow-[8px_8px_0_0_black]">
-        <header class="mb-4">
-          <h3 class="text-2xl font-bold">microservices vs monoliths: the great debate</h3>
-          <p class="text-sm text-gray-600">march 2025</p>
-        </header>
-        <p class="text-base">analyzing the pros and cons of both architectures.</p>
-      </article>
     </div>
   </section>
 
@@ -68,11 +76,13 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="border-4 border-black p-4 shadow-[8px_8px_0_0_black] bg-white">
         <h3 class="text-xl font-bold">mmo - manage my organisation</h3>
-        <p class="text-sm mt-2">cloud-based organization management tool helping businesses hit daily goals. (beta release)</p>
+        <p class="text-sm mt-2">cloud-based organization management tool helping businesses hit daily goals. (beta
+          release)</p>
       </div>
       <div class="border-4 border-black p-4 shadow-[8px_8px_0_0_black] bg-white">
         <h3 class="text-xl font-bold">zeus product (saas)</h3>
-        <p class="text-sm mt-2">quote management saas tool for operational excellence. led architecture and team execution.</p>
+        <p class="text-sm mt-2">quote management saas tool for operational excellence. led architecture and team
+          execution.</p>
       </div>
       <div class="border-4 border-black p-4 shadow-[8px_8px_0_0_black] bg-white">
         <h3 class="text-xl font-bold">fidelis zeus mobile app</h3>
@@ -80,7 +90,8 @@
       </div>
       <div class="border-4 border-black p-4 shadow-[8px_8px_0_0_black] bg-white">
         <h3 class="text-xl font-bold">smiles.care administrator</h3>
-        <p class="text-sm mt-2">volunteer-built end-to-end ngo platform for donations, campaigns, and survey tracking.</p>
+        <p class="text-sm mt-2">volunteer-built end-to-end ngo platform for donations, campaigns, and survey tracking.
+        </p>
       </div>
       <div class="border-4 border-black p-4 shadow-[8px_8px_0_0_black] bg-white">
         <h3 class="text-xl font-bold">mobile precision irrigation system</h3>
@@ -111,11 +122,12 @@
   <!-- contact section -->
   <section id="contact" class="mt-10 mx-4 p-6 border-4 border-black bg-white shadow-[8px_8px_0_0_black]">
     <h2 class="text-2xl font-bold mb-4">contact</h2>
-    <p class="mb-2">email: <a href="mailto:manjot.kalsi@simbaquartz.com" class="underline text-blue-600">manjot.kalsi@simbaquartz.com</a></p>
+    <p class="mb-2">email: <a href="mailto:manjot.kalsi@simbaquartz.com"
+        class="underline text-blue-600">manjot.kalsi@simbaquartz.com</a></p>
     <p class="mb-2">phone: <a href="tel:+918556936450" class="underline text-blue-600">+91 85569-36450</a></p>
-    <p class="mb-2">social: 
-      <a href="https://x.com/manjot_sk" class="underline text-blue-600">x</a>, 
-      <a href="https://github.com/manjotsk" class="underline text-blue-600">gh</a>, 
+    <p class="mb-2">social:
+      <a href="https://x.com/manjot_sk" class="underline text-blue-600">x</a>,
+      <a href="https://github.com/manjotsk" class="underline text-blue-600">gh</a>,
       <a href="https://instagram.com/manjotsk" class="underline text-blue-600">ig</a>
     </p>
   </section>
@@ -126,4 +138,5 @@
   </footer>
 
 </body>
+
 </html>
