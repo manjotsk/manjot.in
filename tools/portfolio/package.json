@@ -1,0 +1,14 @@
+{
+  "name": "manjot-in-portfolio",
+  "private": true,
+  "type": "module",
+  "description": "Builds the projects section of manjot.in from projects.json.",
+  "scripts": {
+    "build": "node build.mjs",
+    "pages": "node build.mjs --no-images"
+  },
+  "devDependencies": {
+    "playwright": "1.48.2",
+    "sharp": "0.33.5"
+  }
+}
